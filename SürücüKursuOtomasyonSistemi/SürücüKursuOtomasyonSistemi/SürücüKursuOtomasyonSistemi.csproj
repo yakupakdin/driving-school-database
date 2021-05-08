@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{279D5248-8587-4785-96AC-F145A9E80CAC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SürücüKursuOtomasyonSistemi</RootNamespace>
+    <AssemblyName>SürücüKursuOtomasyonSistemi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.24.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\AdayKayıtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\AdayKayıtForm.Designer.cs">
+      <DependentUpon>AdayKayıtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\AracGuncellemeFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\AracGuncellemeFormu.Designer.cs">
+      <DependentUpon>AracGuncellemeFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\AraçKaydetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\AraçKaydetForm.Designer.cs">
+      <DependentUpon>AraçKaydetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\ArşivFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\ArşivFormu.Designer.cs">
+      <DependentUpon>ArşivFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\KursiyerGuncellemeFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\KursiyerGuncellemeFormu.Designer.cs">
+      <DependentUpon>KursiyerGuncellemeFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\NufusGuncellemeFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\NufusGuncellemeFormu.Designer.cs">
+      <DependentUpon>NufusGuncellemeFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\OdemeGuncellemeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\OdemeGuncellemeForm.Designer.cs">
+      <DependentUpon>OdemeGuncellemeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\KisiselBilgilerFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\KisiselBilgilerFormu.Designer.cs">
+      <DependentUpon>KisiselBilgilerFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\NotGirisiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\NotGirisiForm.Designer.cs">
+      <DependentUpon>NotGirisiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\OdemeFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\OdemeFormu.Designer.cs">
+      <DependentUpon>OdemeFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\PersonelGuncelleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\PersonelGuncelleme.Designer.cs">
+      <DependentUpon>PersonelGuncelleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\PersonelKayitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\PersonelKayitForm.Designer.cs">
+      <DependentUpon>PersonelKayitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\SubeGuncellemeFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\SubeGuncellemeFormu.Designer.cs">
+      <DependentUpon>SubeGuncellemeFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\SubeKaydetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\SubeKaydetForm.Designer.cs">
+      <DependentUpon>SubeKaydetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Renkler.cs" />
+    <Compile Include="Resources.Designer.cs" />
+    <Compile Include="Resources1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\AdayKayıtForm.resx">
+      <DependentUpon>AdayKayıtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\AracGuncellemeFormu.resx">
+      <DependentUpon>AracGuncellemeFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\AraçKaydetForm.resx">
+      <DependentUpon>AraçKaydetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\ArşivFormu.resx">
+      <DependentUpon>ArşivFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\KisiselBilgilerFormu.resx">
+      <DependentUpon>KisiselBilgilerFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\KursiyerGuncellemeFormu.resx">
+      <DependentUpon>KursiyerGuncellemeFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\NotGirisiForm.resx">
+      <DependentUpon>NotGirisiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\NufusGuncellemeFormu.resx">
+      <DependentUpon>NufusGuncellemeFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\OdemeFormu.resx">
+      <DependentUpon>OdemeFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\OdemeGuncellemeForm.resx">
+      <DependentUpon>OdemeGuncellemeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\PersonelGuncelleme.resx">
+      <DependentUpon>PersonelGuncelleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\PersonelKayitForm.resx">
+      <DependentUpon>PersonelKayitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\SubeGuncellemeFormu.resx">
+      <DependentUpon>SubeGuncellemeFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\SubeKaydetForm.resx">
+      <DependentUpon>SubeKaydetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
